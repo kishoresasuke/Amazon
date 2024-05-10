@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="HomePageTest(failed)">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test2(failed)">
+    <parameter name="name" value="firefox"/>
     <classes>
-      <class name="com.CRMPageTest.HomePageTest">
+      <class name="com.CrossBrowser.NewTest">
         <methods>
-          <include name="setup"/>
-          <include name="VerifySignin"/>
-          <include name="CrmLogin"/>
+          <include name="CrossBrowser" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.CRMPageTest.HomePageTest -->
+      </class> <!-- com.CrossBrowser.NewTest -->
     </classes>
-  </test> <!-- HomePageTest(failed) -->
+  </test> <!-- Test2(failed) -->
 </suite> <!-- Failed suite [Suite] -->

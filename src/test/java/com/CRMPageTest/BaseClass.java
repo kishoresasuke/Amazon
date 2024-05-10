@@ -25,9 +25,9 @@ public class BaseClass {
 		driver.get("https://automationplayground.com/crm/");
 	}
 	
-	@BeforeClass
+	//@BeforeClass
 
-	public void CrmLogin() {
-		hp.sigIn();
-	}
+	//public void CrmLogin() {
+		//hp.sigIn();
+	//}
 }

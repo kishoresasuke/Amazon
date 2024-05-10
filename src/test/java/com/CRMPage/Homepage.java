@@ -20,7 +20,7 @@ public class Homepage {
 	}
 	
 	public void sigIn() {
-		driver.findElement(By.id("SignIn")).click();
+		driver.findElement(By.partialLinkText("Sign In")).click();
 
 	}
 }

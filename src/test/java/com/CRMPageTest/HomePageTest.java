@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 public class HomePageTest extends BaseClass {
 	
 	
-  @Test(priority = 1)
+  @Test(priority = 1 )
   public void VerifyURL() {
 	System.out.println(hp.getUrl());
 	  Assert.assertTrue(hp.getUrl().contains("crm"),"WrongURL");
@@ -19,6 +19,7 @@ public class HomePageTest extends BaseClass {
 	  String Title=hp.getTitle();
 	  Assert.assertTrue(Title.contains("Customer"),"Wrong Title");
 	  System.out.println("Currect Title");
+	  
   }
   @Test(priority = 3)
   public void VerifySignin() {

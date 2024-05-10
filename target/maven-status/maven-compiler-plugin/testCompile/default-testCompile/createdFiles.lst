@@ -1,0 +1,6 @@
+com\CRMPage\Homepage.class
+com\CRMPageTest\HomePageTest.class
+com\CRMPageTest\BaseClass.class
+com\CRMPageTest\LoginPageTest.class
+com\CrossBrowser\NewTest.class
+com\CRMPage\LoginPage.class

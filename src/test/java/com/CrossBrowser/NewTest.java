@@ -22,23 +22,23 @@ public class NewTest {
 	  if (name.equalsIgnoreCase("chrome")) {
 		  ChromeOptions op= new ChromeOptions();
 		  driver=new RemoteWebDriver(new URL("http://localhost:4444/"),op);
-		  driver.get("https://www.google.com/");
+		  driver.get("https://www.amazon.in/");
 		  
 	  }
 	 
 	else if(name.equalsIgnoreCase("edge")){
 		 EdgeOptions op= new EdgeOptions();
 		  driver=new RemoteWebDriver(new URL("http://localhost:4444/"),op);
-		  driver.get("https://www.google.com/");
+		  driver.get("https://www.amazon.in/");
 	  }
 	else if (name.equalsIgnoreCase("firefox")) {
 		 FirefoxOptions op= new FirefoxOptions();
 		  driver=new RemoteWebDriver(new URL("http://localhost:4444/"),op);
-		  driver.get("https://www.google.com/");
+		  driver.get("https://www.amazon.in/");
 		
 	}
 	  System.out.println(driver.getTitle());
-	  driver.close();
+	  
 	  
   }
 }
